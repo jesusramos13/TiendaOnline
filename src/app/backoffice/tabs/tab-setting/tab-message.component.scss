@@ -1,0 +1,133 @@
+.settings-container{
+    width: 75%;
+    max-width: 270px;
+    height: 100%;
+    left: 0px;
+    top: 72px;
+    bottom: 0px;
+    background-color: #9ae2d0;
+
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    column-gap: 10px;
+}
+
+@media (max-width: 769px){
+    .grid-container{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+Ejemplo de media queries para botones
+
+btn{
+    display: block;
+}
+
+@media (max-width: 576px) {
+
+    .boton1{
+        background-color: red;
+        display: block !important;
+    }
+}
+
+@media (min-width: 769px){
+    .boton1{
+        display: none !important;
+    }
+}
+
+@media (max-width: 992px){
+    .boton2{
+    background-color: green;
+    }
+
+}
+
+@media (max-width: 993px){
+    .boton2{
+        font-size: 10px;
+        color: white;
+        background-color: black;
+    }
+}
+
+/*-  EL span no debe aparecer si el dispositivo tiene una pantalla inferior a 576px  y el icono tendra un tamaño de "larger"-> max-width
+- Si la pantalla es superior de 1200 px el boton no debe de aparecer -> min-width
+*/
+
+@media (max-width: 576px){
+    .boton3{
+        background-color: yellow;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 15px;
+
+        span{display: none;}
+        i{font-size: larger;} 
+    }
+}
+
+@media (min-width: 1200px){
+
+    .boton3{
+        display: none !important;
+    }
+}
+
+/*
+- El tamaño de width general 200 px
+- pero cuando la pantalla inferior a 992px el width debe ser 80%
+*/
+
+.boton4{
+    width: 200px;
+    background-color: pink;
+}
+
+@media (max-width: 992px){
+    .boton4{
+        width: 80%;
+    }
+}
+
+/*
+Quinto Boton:
+- el boton desaparece en los dispositivos que tengan un minimo de 769px y 992px y el color de fondo sera naranja*/
+.boton5{
+    background-color: orange;
+}
+@media(min-width: 769px) and (max-width: 992px){
+    .boton5{
+        display: none;
+    }
+}
+
+/*
+- Sexto boton: el boton por defecto va a tener una altura de 300px
+- Cuando la pantalla tenga una altura inferior a 700 px el boton tendra una altura de 100px
+- Si la pantalla es superior a 800 px el boton no debe aparecer. 
+*/
+
+.boton6{
+    height: 300px;
+    background-color: sandybrown;
+}
+
+@media (max-height: 700px){
+    .boton6{
+        height: 100px;
+    }
+}
+
+@media (min-height: 800px){
+    .boton6{    
+        display: none !important;
+    }
+}

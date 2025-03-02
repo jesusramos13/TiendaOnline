@@ -1,0 +1,10 @@
+.sidebar-container {
+    overflow-x: hidden;
+    
+    &.collapsed{
+       h2, span{
+        display: none !important;}
+      }
+    
+}
+

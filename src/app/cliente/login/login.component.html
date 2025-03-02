@@ -1,0 +1,38 @@
+<div class="w-75 mx-auto mt-2 p-3 d-flex flex-column justify-content-center align-items-center">
+    <form [formGroup]="inicioForm" (ngSubmit)="autenticar()" class="w-50 shadow p-5 d-flex flex-column gap-3">
+        <h1 class="text-center text-primary my-3">Iniciar Sesión</h1>
+        <div class="form-group my-2">
+            <label for="">Correo Electrónico: </label>
+            <input type="email" formControlName="correo" class="form-control border-primary shadow" name="usuario"
+                id="usuario" placeholder="practica@gmail.com" required>
+            <div *ngIf="inicioForm.get('correo')?.invalid && inicioForm.get('correo')?.touched" class="text-primary">
+                El correo es obligatorio y debe tener un formato válido.
+            </div>
+        </div>
+        <div class="form-group mb-4">
+            <label for="">Contraseña: </label>
+            <input type="password" formControlName="contrasena" class="form-control border-primary shadow"
+                name="contrasena" id="contrasena" placeholder="1234" required>
+            <div *ngIf="inicioForm.get('contrasena')?.invalid && inicioForm.get('contrasena')?.touched"
+                class="text-danger">
+                La contraseña es obligatoria y debe tener al menos 4 caracteres.
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-between">
+            <div class="form-switch p-0 d-flex align-items-center justify-content-center gap-2">
+                <input type="checkbox" class="form-check-input m-auto text-primary" formControlName="recuerdame" id="recuerdame">
+                <label for="recuerdame" class="form-check-label m-auto">Recuerdame</label>
+            </div>
+            <div>
+                <a class="text-decoration-none" rel="noopener" href="">¿Olvidaste tu contraseña?</a>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary mb-4 shadow"
+            [disabled]="inicioForm.invalid">Ingresar
+        </button>
+        <div class="d-flex gap-2 align-items-center justify-content-end" >
+            <span>¿No tienes una cuenta?</span>
+            <a href="" routerLink="/registro" class="text-decoration-none">¡Registrate ahora!</a>
+        </div>
+    </form>
+</div>
