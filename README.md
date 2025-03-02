@@ -1,4 +1,4 @@
-Mi Tienda Online - Jesus Ramos Angulo / 2do DAW
+# Mi Tienda Online - Jesus Ramos Angulo / 2do DAW
 
 // En construccion
 Proyecto hecho en Angular
@@ -12,9 +12,9 @@ Proyecto que por el momento tiene hecho lo siguiente:
 
 - Tenemos mas componentes creados donde se iran sumando nuevos html, se encuentran en proceso de construccion
 
-  # Se implementa un sistema de autenticacion mediante tokens.
-  # Registro de usuarios con conexion a base de datos local MySQL.
-  # Se realiza refactorizacion y mejora de codigo TypeScrip a los archivos .ts de cada componente en los que he trabajado. 
+  * Se implementa un sistema de autenticacion mediante tokens.
+  * Registro de usuarios con conexion a base de datos local MySQL.
+  * Se realiza refactorizacion y mejora de codigo TypeScrip a los archivos .ts de cada componente en los que he trabajado. 
 
 
 
