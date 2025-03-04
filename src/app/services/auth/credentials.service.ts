@@ -10,6 +10,7 @@ interface LoginResponse {
   user: UserInterface;
 }
 
+//prueba Git
 interface RegisterResponse {
   id: string;
   username: string;
