@@ -1,37 +1,20 @@
- Tipografías
-  - Poppins
-  - Montserrat
-  - Roboto 
-  - Open Sans
-  - Lato
-  - Raleway
-  - Lora
+# Mi Tienda Online - Jesus Ramos Angulo / 2do DAW
 
-  - Poppins + Montserrat
-  - Raleway + Montserrat (Viceversa)
-  - Open Sans + Poppins
-  - Raleway + Lora
-  - Open Sans + Roboto (Viceversa)
-  - Roboto + Montserrat
-  - Montserrat
-  - Poppins
+// En construccion
+Proyecto hecho en Angular
 
+#Funcionamiento:
 
-https://hencework.com/theme/hound/rtl-light/
+Proyecto que por el momento tiene hecho lo siguiente: 
+- Componente Login: Formulario para iniciar sesion
+- Componente Registro: Formulario para registrar nuevo usuario
+- Componente Panel de Control (BackOffice): Panel de control donde vemos un DashBoard de estadisticas y gráficos.
 
+- Tenemos mas componentes creados donde se iran sumando nuevos html, se encuentran en proceso de construccion
 
-Páginas de BackOffice: 
-  - Inicio
-  - Perfil
-  - Cambiar contraseña
-  - Productos
-  - Cerrar sesión
-  - -------------
-  - Redes sociales
-
-
-
-
+  * Se implementa un sistema de autenticacion mediante tokens.
+  * Registro de usuarios con conexion a base de datos local MySQL.
+  * Se realiza refactorizacion y mejora de codigo TypeScrip a los archivos .ts de cada componente en los que he trabajado. 
 
 
 
